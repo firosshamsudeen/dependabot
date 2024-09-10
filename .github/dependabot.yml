@@ -5,8 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "maven" # See documentation for possible values
+  - package-ecosystem: "maven" # npm for angular, pip for python
     directory: "/" # Location of package manifests
-    target-branch: "main"
+    target-branch: "master"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 10
+    # Add reviewers
+    reviewers:
+      - "fxs154"
+      - "my-username"
+      - "my-org/verifier-team"
+    
