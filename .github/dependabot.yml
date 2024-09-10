@@ -9,7 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     target-branch: "master"
     schedule:
-      interval: "daily"
+      interval: "daily" # weekly, monthly
     open-pull-requests-limit: 10
     # Add reviewers
     reviewers:
